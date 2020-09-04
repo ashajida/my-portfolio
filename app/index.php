@@ -222,7 +222,7 @@
             </div>
         </div>
     </footer>
-    <script src="./assets/js/script.js"></script>
+    <script src="./js/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
