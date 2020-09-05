@@ -50,3 +50,32 @@ const smoothScroll = () => {
 }
 
 smoothScroll();
+
+//Intersection Observer
+const sliderObserver = function() {
+  const sliders = document.querySelectorAll('.slide');
+  const options = {
+    rootMargin: '0px 0px -500px 0px',
+    threshold: 0
+  }
+  
+  let observer = new IntersectionObserver(function (entries, observer) {
+
+    entries.forEach(function(entry) {
+      if(!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add('slide-in');
+        // observe.unobserve(entry.target);
+      }
+    })
+  }, options);
+
+  sliders.forEach(function(slide) {
+    console.log(slide);
+    observer.observe(slide);
+  })
+  
+}
+
+sliderObserver();

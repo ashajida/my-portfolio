@@ -2864,13 +2864,17 @@ nav.top-navul li a:active {
 
 /** About Me Section **/
 .about-section {
-  background-color: #fff; }
+  background-color: #fff;
+  overflow: hidden; }
 
 .about-section .about-me-description {
   position: relative;
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  transform: translateX(-50%);
+  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  opacity: 0; }
 
 .about-section .about-me-description .about-me-description-text {
   margin-bottom: 2.5em; }
@@ -2880,6 +2884,9 @@ nav.top-navul li a:active {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  transform: translateX(50%);
+  opacity: 0;
+  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
   margin-bottom: 2em; }
 
 .about-section .about-me-image .img-wrapper {
@@ -3040,3 +3047,8 @@ footer {
 footer .copyright {
   display: inline-block;
   margin: 0 auto; }
+
+.about-me-image.slide.slide-in,
+.about-me-description.slide.slide-in {
+  opacity: 1;
+  transform: translateX(0); }

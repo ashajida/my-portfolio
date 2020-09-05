@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./app/css/styles.css">
     <title>Home</title>
 </head>
 <body>
@@ -46,7 +46,7 @@
                     <div class="project-wrapper">
                       <div class="project">
                       <div class="img-wrapper">
-                            <img src="./assets/images/school-kids.jpg" alt="">
+                            <img src="./app/assets/images/school-kids.jpg" alt="">
                         </div>
                         <div class="project-description">
                             <h3>Music Streaming Player</h3>
@@ -68,7 +68,7 @@
                     <div class="project-wrapper">
                       <div class="project">
                       <div class="img-wrapper">
-                            <img src="./assets/images/school-kids.jpg" alt="">
+                            <img src="./app/assets/images/school-kids.jpg" alt="">
                         </div>
                         <div class="project-description">
                             <h3>Music Streaming Player</h3>
@@ -90,7 +90,7 @@
                     <div class="project-wrapper">
                       <div class="project">
                       <div class="img-wrapper">
-                            <img src="./assets/images/school-kids.jpg" alt="">
+                            <img src="./app/assets/images/school-kids.jpg" alt="">
                         </div>
                         <div class="project-description">
                             <h3>Music Streaming Player</h3>
@@ -115,18 +115,18 @@
         <section id="about-section" class="about-section">
             <div class="container">
                 <div class="content-wrapper">
-                        <div class="about-me-image">
-                        <div class="img-wrapper">
-                            <img src="./assets/images/ashajida.jpg" alt="about me">
+                        <div class="about-me-image slide">
+                            <div class="img-wrapper">
+                                <img src="./app/assets/images/ashajida.jpg" alt="about me">
+                            </div>
                         </div>
-                        </div>
-                        <div class="about-me-description">
-                        <h2>About Me</h2>
-                        <div class="about-me-description-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                         <a href="/contact" class="btn">Download CV</a>
+                        <div class="about-me-description slide">
+                            <h2>About Me</h2>
+                            <div class="about-me-description-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <a href="/contact" class="btn">Download CV</a>
                         </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                 <div class="skill-wrapper">
                     <div class="skill">
                         <div class="img-wrapper">
-                            <img src="./assets/images/html-icon.svg" alt="html">
+                            <img src="./app/assets/images/html-icon.svg" alt="html">
                         </div>
                         <h4>HTML</h4>
                     </div>
@@ -148,7 +148,7 @@
                 <div class="skill-wrapper">
                     <div class="skill">
                         <div class="img-wrapper">
-                            <img src="./assets/images/css-icon.svg" alt="css">
+                            <img src="./app/assets/images/css-icon.svg" alt="css">
                         </div>
                         <h4>CSS</h4>
                     </div>
@@ -156,7 +156,7 @@
                 <div class="skill-wrapper">
                     <div class="skill">
                         <div class="img-wrapper">
-                            <img src="./assets/images/javascript-icon.svg" alt="javascript">
+                            <img src="./app/assets/images/javascript-icon.svg" alt="javascript">
                         </div> 
                         <h4>JavaScript</h4>
                     </div>
@@ -164,7 +164,7 @@
                 <div class="skill-wrapper">
                     <div class="skill">
                         <div class="img-wrapper">
-                            <img src="./assets/images/php-icon.svg" alt="php">
+                            <img src="./app/assets/images/php-icon.svg" alt="php">
                         </div>
                         <h4>PHP</h4>
                     </div>
@@ -172,7 +172,7 @@
                 <div class="skill-wrapper">
                     <div class="skill">
                         <div class="img-wrapper">
-                            <img src="./assets/icons/wordpress-icon.svg" alt="php">
+                            <img src="./app/assets/icons/wordpress-icon.svg" alt="php">
                         </div>
                         <h4>WordPress</h4>
                     </div>
@@ -192,7 +192,7 @@
                             <li><span class="contact-icon"><ion-icon name="location"></ion-icon></span>Nottingham, UK</li>
                         </ul>
                     </div>
-                    <?php include_once './handlers/handleEnquiry.php'; ?>
+                    <?php include_once './app/handlers/handleEnquiry.php'; ?>
                     <div class="contact-form">
                         <form action="index.php" method="POST">
                             <div class="input-field">
@@ -222,7 +222,7 @@
             </div>
         </div>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./app/js/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
